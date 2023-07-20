@@ -34,7 +34,7 @@ a {
     --color-white: #ffffff;
     --color-light-gray: #f3f3f3;
     --color-dark-gray: #353535;
-    --text-color: va(--color-black);
+    --text-color: var(--color-black);
 }
 
 /* Revisitar las declaraciones de section-tagline y card-category para usar color-primary */
