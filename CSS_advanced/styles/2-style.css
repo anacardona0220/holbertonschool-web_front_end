@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Establecer el color del texto (foreground) a #161616 para el body */
+body {
+    color: #161616;
+  }
+  
+  /* Establecer el color del texto (foreground) a #161616 para todos los elementos 'a' (enlaces) */
+  a {
+    color: #161616;
+  }
+  
+  /* Ocultar todos los elementos con la clase 'visually-hidden' */
+  .visually-hidden {
+    display: none;
+  }
+  
+  /* Establecer el color del texto (foreground) a #D73953 para todos los elementos con la clase 'card-category' */
+  .card-category {
+    color: #D73953;
+  }
+  
+  /* Establecer el color del texto (foreground) a #D73953 para todos los elementos con la clase 'section-tagline' */
+  .section-tagline {
+    color: #D73953;
+  }
