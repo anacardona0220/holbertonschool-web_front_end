@@ -2,47 +2,39 @@ html {
     scroll-behavior: smooth;
 }
 
-
-/* Establecer el color del texto (foreground) a #161616 para el body */
 body {
     color: #161616;
 }
 
-/* Establecer el color del texto (foreground) a #161616 para todos los elementos 'a' (enlaces) */
 a {
     color: #161616;
 }
 
-/* Ocultar todos los elementos con la clase 'visually-hidden' */
 .visually-hidden {
     display: none;
 }
 
-/* Establecer el color del texto (foreground) a #D73953 para todos los elementos con la clase 'card-category' */
 .card-category {
-    color: #D73953;
+    color: #d73953;
 }
 
-/* Establecer el color del texto (foreground) a #D73953 para todos los elementos con la clase 'section-tagline' */
 .section-tagline {
-    color: #D73953;
+    color: #d73953;
 }
 /* Apuntar al elemento raíz (root) y definir las propiedades personalizadas */
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
-    --color-light-gray: #f3f3f3;
-    --color-dark-gray: #353535;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
     --text-color: var(--color-black);
 }
-
 /* Revisitar las declaraciones de section-tagline y card-category para usar color-primary */
 .section-tagline, .card-category {
     color: var(--color-primary);
   }
 
-/* Revisitar las declaraciones de body y anchor para usar text-color */
-body, a {
+  body, a {
     color: var(--text-color);
   }
