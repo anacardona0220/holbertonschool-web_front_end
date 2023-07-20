@@ -28,13 +28,13 @@ a {
     color: var(--color-primary);
 }
 
-.section-header {
-    text-align: var(--section-header-aling);
-}
-
 .section-tagline {
     color: #d73953;
     color: var(--color-primary);
+}
+
+.section-header {
+    text-align: var(--section-header-aling);
 }
 
 :root {
