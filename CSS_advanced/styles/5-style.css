@@ -5,7 +5,7 @@ html {
 
 body {
     color: #161616;
-    font-size: font-size-medium /* Establecer el tamaño de fuente en el cuerpo (body) a font-size-medium */
+    font-size: var(--font-size-medium) /* Establecer el tamaño de fuente en el cuerpo (body) a font-size-medium */
 
 }
 
