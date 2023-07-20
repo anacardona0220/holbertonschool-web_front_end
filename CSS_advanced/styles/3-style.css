@@ -27,14 +27,14 @@ a {
 .section-tagline {
     color: #D73953;
 }
-
+/* Apuntar al elemento raíz (root) y definir las propiedades personalizadas */
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
     --color-light-gray: #f3f3f3;
     --color-dark-gray: #353535;
-    --text-color: var(color-black);
+    --text-color: va(--color-black);
 }
 
 /* Revisitar las declaraciones de section-tagline y card-category para usar color-primary */
