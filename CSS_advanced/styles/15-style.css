@@ -179,7 +179,15 @@ template {
     display: none
 }
 
+
 /*# sourceMappingURL=normalize.min.css.map */
+
+/* Universal box sizing rule */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 :root {
     --color-primary: #d73953;
@@ -212,12 +220,7 @@ template {
 
 }
 
-/* Universal box sizing rule */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+
 
 html {
     scroll-behavior: smooth;
