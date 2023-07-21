@@ -178,18 +178,17 @@ template {
 [hidden] {
     display: none
 }
-
-
 /*# sourceMappingURL=normalize.min.css.map */
 
 /* Universal box sizing rule */
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root {
+    /* define custom colors */
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
@@ -197,33 +196,43 @@ template {
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
 
+    /* define custom font-family properties */
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+    /* define custom font-size properties */
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
 
+    /* define custom font-weight properties */
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 
+    /* define custom line-height properties */
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
 
+    /* define custom section-header-aline properties */
     --section-header-align: center;
+
+    /* define custom section-tagline-transform properties */
     --section-tagline-transform: uppercase;
+
+    /* define custom section-title-margin properties */
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
+
+    /* define custom section-padding properties */
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-body-padding: 0 0 3rem;
-    --section-footer-padding: 3rem 0 0,
+    --section-footer-padding: 3rem 0 0;
     --section-footer-align: center;
-    --footer-padding: 5rem 0 1rem
-
+    --footer-padding: 5rem 0 1rem;
 }
 
 
@@ -285,12 +294,11 @@ a:active {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
+
 .section {
     padding: var(--section-padding);
 }
-
-  
 
 .section-header {
     text-align: var(--section-header-align);
