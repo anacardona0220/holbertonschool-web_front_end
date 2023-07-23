@@ -563,6 +563,8 @@ ul.row {
 
     /* Set the background to the variable color-black */
     background: var(--color-black);
+
+    --button-color: var(--color-white);
 }
 
 /* Style the footer-address class */
@@ -632,8 +634,3 @@ ul.row {
     background: var(--button-hover-background);
 }
 
-/* In [data-section-theme="dark"], add the variable */
-[data-section-theme="dark"] {
-    /* Create a custom property button-color pointing to the variable color-white */
-    --button-color: var(--color-white);
-}
