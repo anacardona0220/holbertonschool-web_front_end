@@ -490,8 +490,20 @@ ul.row {
   text-align: right;
 }
 
-.row::after {
+/* .row::after {
     content: "";/*permite insertar contenido después del elemento especificado*/
+    /* display: table; */
+    /* clear: both;evita que se permitan elementos flotantes a ambos lados */
+   
+
+  /* CSS rule to create a new row after each instance of the class row */
+.row::after {
+    /* no content */
+    content: "";
+  
+    /* displayed as a table */
     display: table;
-    clear: both;/*evita que se permitan elementos flotantes a ambos lados*/
+  
+    /* do not allow any floating elements on either side */
+    clear: both;
   }
