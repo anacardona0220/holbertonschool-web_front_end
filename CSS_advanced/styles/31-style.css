@@ -479,9 +479,9 @@ a:active {
 }
 
 /* Edit the nav-item-link-hover property by setting its value to the variable color-white */
-/* .nav-item-link-hover {
+.nav-item-link-hover {
     color: var(--color-white);
-  } */
+  }
 
 /* Target the before pseudo elements of nav-link that is inside the nav */
 .nav .nav-link::before {
@@ -489,7 +489,7 @@ a:active {
     content: "";
 
     /* Absolutely position the targeted elements */
-    position: absolute;
+    position: relative;
 
     /* Set the vertical position to 0 */
     top: 0;
