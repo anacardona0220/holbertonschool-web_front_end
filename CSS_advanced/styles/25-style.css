@@ -523,6 +523,9 @@ ul.row {
     /* Establecer el fondo al valor de la variable color-black */
     background: var(--color-black);
 
+    
+
+
 }
 
 .footer-address {
@@ -577,12 +580,14 @@ ul.row {
     text-decoration: var(--button-text-decoration);
 }
 
+/* Create the hover state of the button class selector */
 .button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background: var(--button-hover-background);
 }
 
+/* In [data-section-theme="dark"], add the variable */
 [data-section-theme="dark"] {
     /* Create a custom property button-color pointing to the variable color-white */
     --button-color: var(--color-white);
