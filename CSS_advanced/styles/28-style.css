@@ -1,0 +1,690 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+    -webkit-appearance: button;
+}
+
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/*# sourceMappingURL=normalize.min.css.map */
+/*
+                    ************************** start of my code **********************************************
+                    */
+/* Universal box sizing rule */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Target the root element and define custom properties */
+:root {
+    /* Define custom colors */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    /* Set default text color to color-black */
+
+    /* Define custom font-family properties with Open Sans as the first choice */
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* Define custom font-size properties */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Define custom font-weight properties */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Define custom line-height properties */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+    /* Create a new custom property section-header-align and set it to center */
+    --section-header-align: center;
+
+    /* Create a custom property section-tagline-transform and set it to uppercase */
+    --section-tagline-transform: uppercase;
+
+    /* Custom properties for section title */
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+
+    /* Create the following custom properties */
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+
+    /* Create the following custom properties */
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
+
+    /* Create the custom property section-tagline-margin set to 0 */
+    --section-tagline-margin: 0;
+
+    /* Add custom properties to the root selector in the css file */
+    --button-display: inline-block;
+    --button-padding: 1.5rem 3rem;
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
+
+    --header-padding: 4rem 0 0;
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
+}
+
+/* Target the class section and set the padding on all 4 sides to section-padding */
+.section {
+    padding: var(--section-padding);
+}
+
+/* Just above the section-tagline declaration, create a new declaration targeting the class section-header */
+.section-header {
+    /* Set .section-header's padding on all 4 sides with section-header-padding */
+    padding: var(--section-header-padding);
+    /* Set horizontal alignment of that class with section-header-align */
+    text-align: var(--section-header-align);
+}
+
+/* Following the section-header declaration, target the section-body class, pad all 4 sides with section-body-padding */
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+/* Following the section-body declaration, target the section-footer class, pad all 4 sides with section-footer-padding and set the horizontal alignment with section-footer-align */
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+/* At the end of your style file, target the class footer, pad all 4 sides of the selected element with footer-padding */
+.footer {
+    padding: var(--footer-padding);
+}
+
+/* Just above the section-tagline declaration, create a new declaration targeting the section-title class */
+.section-title {
+    /* Set the family of fonts to font-family-title */
+    font-family: var(--font-family-title);
+
+    /* Set the font size to font-size-xx-large */
+    font-size: var(--font-size-xx-large);
+
+    /* Set the font weight to font-weight-bold */
+    font-weight: var(--font-weight-bold);
+
+    /* Use the section-title-margin to set the margin */
+    margin: var(--section-title-margin);
+
+    /* Use the section-title-color to set the text color */
+    color: var(--section-title-color);
+}
+
+/* Targeting the section-tagline class */
+.section-tagline {
+    /* Set the margins for the section-tagline class to section-tagline-margin */
+    margin: var(--section-tagline-margin);
+
+    /* Set the family of fonts to font-family-title */
+    font-family: var(--font-family-title);
+
+    /* By using the property section-tagline-transform, transform the text */
+    text-transform: var(--section-tagline-transform);
+
+    /* Set the weight of fonts to font-weight-bold */
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+}
+
+/* Target the .container class and set the following */
+.container {
+    /* Set the width to 960px */
+    width: 960px;
+
+    /* Evenly distribute the margins on both the left and right side */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Revisit the section-tagline and card-category declarations and reset their color to color-primary */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Create a new declaration targeting all 6 levels of section headings, positioned before the links declaration */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Set its font-family to font-family-title */
+    font-family: var(--font-family-title);
+    /* Set the boldness of fonts in the headings to font-weight-bold */
+    font-weight: var(--font-weight-bold);
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Set font-size for all fonts in the html element to 62.5% of their normal size */
+    font-size: 62.5%;
+    /* This sets 1rem to be equal to 10px (62.5% of the default 16px) */
+}
+
+body {
+    /* Set the minimum height of line boxes in the body to line-height-base */
+    line-height: var(--line-height-base);
+    /* Revisit the body and anchor declarations and reset their color to text-color */
+    color: var(--text-color);
+    /* Set body's font-family to font-family-base */
+    font-family: var(--font-family-base);
+    /* Set font-size for any fonts in the body to font-size-medium */
+    font-size: var(--font-size-medium);
+    /* Set the boldness of fonts in the body to font-weight-regular */
+    font-weight: var(--font-weight-regular);
+}
+
+/* a {
+                                        color: #161616;
+                                      } */
+
+/* Target anchor elements that contain a hyperlink */
+a:link {
+    /* Style the anchor elements so the text isn't decorated with anything */
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Target the visited state for the link */
+a:visited {
+    /* Italicize the text (same as in the default state) */
+    font-style: italic;
+}
+
+/* Target the hover state for the link */
+a:hover {
+    /* Decorate the links with an underline when hovering */
+    text-decoration: underline;
+}
+
+/* Target the active state for the link */
+a:active {
+    /* Set the color of the background with the variable color-light-grey */
+    background-color: var(--color-light-grey);
+}
+
+/* Hide all elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Set foreground color of all elements with the class card-category to #D73953 */
+.card-category {
+    color: #d73953;
+}
+
+/* Set foreground color of all elements with the class section-tagline to #D73953 */
+.section-tagline {
+    color: #d73953;
+}
+
+/* Customizing the navbar */
+
+/* Targeting the navbar-menu class, let it float to the right */
+.navbar-menu {
+    float: right;
+}
+
+/* For the nav class */
+.nav {
+    /* the margin on all sides should be set to 0 */
+    margin: 0;
+
+    /* the padding on all sides should be set to 0 */
+    padding: 0;
+
+    /* center align the text */
+    text-align: center;
+
+    /* the list will be displayed without any markers (bullets) or numbering */
+    list-style: none;
+}
+
+/* For the nav-item class in nav class */
+.nav .nav-item {
+    /* set the display to nav-item-display */
+    display: var(--nav-item-display);
+
+    /* set the family of fonts to nav-item-font-family */
+    font-family: var(--nav-item-font-family);
+
+    /* set the boldness of fonts to nav-item-font-weight */
+    font-weight: var(--nav-item-font-weight);
+
+    /* set the size of fonts to nav-item-font-size */
+    font-size: var(--nav-item-font-size);
+
+    /* set the spacing between text characters to nav-item-letter-spacing */
+    letter-spacing: var(--nav-item-letter-spacing);
+
+    /* set the margin on all sides to nav-item-margin */
+    margin: var(--nav-item-margin);
+}
+
+/* For the nav-link class in nav class */
+.nav .nav-link {
+    /* set the display to block */
+    display: block;
+
+    /* set the padding to half of the root element for top and bottom, and equal to the root element for left and right */
+    padding: 0.5rem 1rem;
+}
+
+/* While hovering over the nav-link class in nav class, set their foreground color value to nav-item-link-hover */
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
+}
+
+/* For all ul with the class row */
+ul.row {
+    /* 0 margins all around */
+    margin: 0;
+
+    /* No padding all around */
+    padding: 0;
+
+    /* The list should not have any default styles at all */
+    list-style: none;
+}
+
+/* For the col-1-3 class */
+.col-1-3 {
+    /* set the width to 33.33% of its parent */
+    width: 33.33%;
+
+    /* Remove references to these common properties for the individual col-1-3 and col-1-2 classes */
+    /* float it to the left */
+    /* float: left; */
+
+    /* set its padding to half of the root element */
+    /* padding: 0.5rem; Assuming the root element's font size is defined in rem units */
+}
+
+/* For the col-1-2 class */
+.col-1-2 {
+    /* set the width to 50% of the parent */
+    width: 50%;
+
+    /* Remove references to these common properties for the individual col-1-3 and col-1-2 classes */
+    /* float it to the left */
+    /* float: left; */
+
+    /* set its padding to half of the root element */
+    /* padding: 0.5rem; Assuming the root element's font size is defined in rem units */
+}
+
+/* Select all classes that start with col- */
+[class^="col-"] {
+    /* float them to the left */
+    float: left;
+
+    /* set their padding to half of the root element */
+    padding: 0.5rem;
+    /* Assuming the root element's font size is defined in rem units */
+}
+
+/* For the footer-copyright class */
+.footer-copyright {
+    /* No margins */
+    margin: 0;
+
+    /* Set the size of the fonts to font-size-small */
+    font-size: var(--font-size-small);
+
+    /* set the foreground color to text-color */
+    color: var(--text-color);
+}
+
+/* For all ul tag in the footer class, align the text to the right */
+.footer ul {
+    text-align: right;
+}
+
+/* CSS rule to create a new row after each instance of the class row */
+.row::after {
+    /* no content */
+    content: "";
+
+    /* displayed as a table */
+    display: table;
+
+    /* do not allow any floating elements on either side */
+    clear: both;
+}
+
+/* Style the data-section-theme="dark" with these rules */
+[data-section-theme="dark"] {
+    /* Redefine the custom property text-color to the color-white */
+    --text-color: var(--color-white);
+
+    /* Redefine the custom property section-title-color to color-white */
+    --section-title-color: var(--color-white);
+
+    /* Set the background to the variable color-black */
+    background: var(--color-black);
+
+    --button-color: var(--color-white);
+}
+
+/* Style the footer-address class */
+.footer-address {
+    /* Set the color of the text to the text-color property */
+    color: var(--text-color);
+}
+
+/* Style the social-link class */
+.social-link {
+    /* Style it so that it renders as a block element */
+    display: block;
+}
+
+/* Style the social-link class that also selects the svg children */
+.social-link>svg {
+    /* Fill in the color of the svg children with the text-color variable */
+    fill: var(--text-color);
+}
+
+/* Target card-title that is inside card-services */
+.card-services .card-title {
+    /* The margin on all sides should be none at all */
+    margin: 0;
+}
+
+/* Target a that is inside card-services */
+.card-services a {
+    /* Have them render as block level elements */
+    display: block;
+
+    /* The padding should be set to 2x the root element */
+    padding: 2rem;
+    /* Assuming the root element's font size is defined in rem units */
+
+    /* Set the background color to the variable color-light-grey */
+    background-color: var(--color-light-grey);
+}
+
+/* Target the hover state of a that is inside card-services */
+.card-services a:hover {
+    /* Set the foreground color to the variable color-white */
+    color: var(--color-white);
+
+    /* Set the color of the background to the variable color-primary */
+    background-color: var(--color-primary);
+
+    /* Text should not be decorated at all */
+    text-decoration: none;
+}
+
+/* Add these selectors after the selector for anchor links in active state */
+/* Create the button class selector */
+.button {
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+}
+
+/* Create the hover state of the button class selector */
+.button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background: var(--button-hover-background);
+}
+
+.card-testimonial {
+    text-align: center;
+  }
+
+  .card-testimonial .card-avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .card-testimonial .card-quote cite {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary);
+  }
+
+  .section-hero {
+    background-size: 90rem auto;
+  }
+
+  .section-hero .section-title {
+    margin-bottom: 5rem;
+  }
+
+  .section-hero .section-inner {
+    padding: 10rem 40rem 2rem 0;
+  }
+
+  .header {
+    padding: var(--header-padding);
+  }
+
+  .header-logo {
+    position: var(--header-logo-position);
+  }
+
+  .header-logo a {
+ 
+    display: var(--header-logo-link-display);
+  
+    position: var(--header-logo-link-position);
+  
+    top: var(--header-logo-link-top);
+  
+    left: var(--header-logo-link-left);
+  }
+
