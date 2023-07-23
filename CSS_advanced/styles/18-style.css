@@ -379,9 +379,5 @@ h6 {
 /* While hovering over the nav-link class in nav class, set their foreground color value to nav-item-link-hover */
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);  /*cuando paso el mause que cambie de color*/
-  }
-
-.navbar-menu {
-    float: right;
-
 }
+
