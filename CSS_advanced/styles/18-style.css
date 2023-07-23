@@ -353,28 +353,32 @@ h6 {
     float: right;
 }
 
-.nav .nav-item .nav-link {
+.nav  {
     margin: 0;
     padding: 0;
     text-align: center;
+    list-style: none;
     /* Alinear el texto al centro dentro de la clase nav */
+    
+}
+.nav .nav-item  {
     font-family: var(nav-item-font-family);
     font-weight: var(nav-item-font-weight);
     font-size: var(nav-item-font-size);
     letter-spacing: var(nav-item-letter-spacing);
     display: var(nav-item-display);
     margin: var(nav-item-margin);
-    padding-top: calc(var(--root-padding) / 2);
-    padding-bottom: calc(var(--root-padding) / 2);
-    padding-left: var(--root-padding);
-    padding-right: var(--root-padding);
-    display: block;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: calc(var(--root-margin) * 3);
-    margin-left: 0;
-
 }
+.nav.nav-link {
+   
+    display: block;
+    padding: 0.5rem 1rem;
+    
+}
+/* While hovering over the nav-link class in nav class, set their foreground color value to nav-item-link-hover */
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);  /*cuando paso el mause que cambie de color*/
+  }
 
 .navbar-menu {
     float: right;
