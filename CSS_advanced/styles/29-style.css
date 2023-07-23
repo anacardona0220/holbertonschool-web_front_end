@@ -434,6 +434,7 @@ a:active {
 }
 
 /* For the nav class */
+
 .nav {
     /* the margin on all sides should be set to 0 */
     margin: 0;
@@ -469,9 +470,6 @@ a:active {
     margin: var(--nav-item-margin);
 }
 
-
-
-
 /* For the nav-link class in nav class */
 .nav .nav-link {
     /* set the display to block */
@@ -481,12 +479,9 @@ a:active {
     padding: 0.5rem 1rem;
 }
 
+/* While hovering over the nav-link class in nav class, set their foreground color value to nav-item-link-hover */
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
-}
-
-.nav-item-link-hover {
-    color: var(--color-white);
 }
 
 /* Edit the nav-item-link-hover property by setting its value to the variable color-white */
@@ -528,11 +523,6 @@ a:active {
     width: 100%;
 }
 
-/* For all ul with the class row */
-ul.row {
-    /* 0 margins all around */
-    margin: 0;
-}
 
 /* For all ul with the class row */
 ul.row {
