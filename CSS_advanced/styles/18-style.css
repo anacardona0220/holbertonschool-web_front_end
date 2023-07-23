@@ -185,199 +185,272 @@ template {
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
+/* Target the root element and define custom properties */
 :root {
-    /* define custom colors */
-    --color-primary: #d73953;
-    --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
-    --text-color: var(--color-black);
+  /* Define custom colors */
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black); /* Set default text color to color-black */
 
-    /* define custom font-family properties */
-    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Define custom font-family properties with Open Sans as the first choice */
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-    /* define custom font-size properties */
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
+  /* Define custom font-size properties */
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
 
-    /* define custom font-weight properties */
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
+  /* Define custom font-weight properties */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
 
-    /* define custom line-height properties */
-    --line-height-small: 1.2;
-    --line-height-base: 1.5;
-    --line-height-big: 1.8;
+  /* Define custom line-height properties */
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
 
-    /* define custom section-header-aline properties */
-    --section-header-align: center;
+  /* Create a new custom property section-header-align and set it to center */
+  --section-header-align: center;
 
-    /* define custom section-tagline-transform properties */
-    --section-tagline-transform: uppercase;
+  /* Create a custom property section-tagline-transform and set it to uppercase */
+  --section-tagline-transform: uppercase;
 
-    /* define custom section-title-margin properties */
-    --section-title-margin: 0;
-    --section-title-color: var(--color-black);
+  /* Custom properties for section title */
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
 
-    /* define custom section-padding properties */
-    --section-padding: 5rem 0;
-    --section-header-padding: 0 0 3rem;
-    --section-body-padding: 0 0 3rem;
-    --section-footer-padding: 3rem 0 0;
-    --section-footer-align: center;
-    --footer-padding: 5rem 0 1rem;
+  /* Create the following custom properties */
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
 
-    /* Cambia este valor según el color deseado */
-
-
-    --nav-item-font-family: var(--font-family-title);
-    --nav-item-font-weight: var(--font-weight-bold);
-    --nav-item-font-size: var(--tofont-size-medium);
-    --nav-item-letter-spacing: 0.04rem;/*4%del root element*/
-    --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 3rem 0;/*3 times the root element on the bottom and 0*/
-    --nav-item-link-hover: var(--color-primary);
+  /* Create the following custom properties */
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 0.04rem;
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3rem 0;
+  --nav-item-link-hover: var(--color-primary);
 }
 
-
-
-html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-}
-
-body {
-    color: #161616;
-    color: var(--text-color);
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-base);
-}
-
-a {
-    color: #161616;
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-a:link {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-a:visited {
-    font-style: italic;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    background-color: var(--color-light-grey);
-}
-
-.visually-hidden {
-    display: none;
-}
-
-.card-category {
-    color: #d73953;
-    color: var(--color-primary);
-}
-
-.section-tagline {
-    color: var(--color-primary);
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform);
-    font-weight: var(--font-weight-bold);
-}
-
-.container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* Target the class section and set the padding on all 4 sides to section-padding */
 .section {
-    padding: var(--section-padding);
+  padding: var(--section-padding);
 }
 
+/* Just above the section-tagline declaration, create a new declaration targeting the class section-header */
 .section-header {
-    text-align: var(--section-header-align);
-    padding: var(--section-header-padding);
+  /* Set .section-header's padding on all 4 sides with section-header-padding */
+  padding: var(--section-header-padding);
+  /* Set horizontal alignment of that class with section-header-align */
+  text-align: var(--section-header-align);
 }
 
+/* Following the section-header declaration, target the section-body class, pad all 4 sides with section-body-padding */
 .section-body {
-    padding: var(--section-body-padding);
+  padding: var(--section-body-padding);
 }
 
+/* Following the section-body declaration, target the section-footer class, pad all 4 sides with section-footer-padding and set the horizontal alignment with section-footer-align */
 .section-footer {
-    text-align: var(--section-footer-align);
-    padding: var(--section-footer-padding);
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
 }
 
+/* At the end of your style file, target the class footer, pad all 4 sides of the selected element with footer-padding */
 .footer {
-    padding: var(--footer-padding);
+  padding: var(--footer-padding);
 }
 
+/* Just above the section-tagline declaration, create a new declaration targeting the section-title class */
 .section-title {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
+  /* Set the family of fonts to font-family-title */
+  font-family: var(--font-family-title);
+
+  /* Set the font size to font-size-xx-large */
+  font-size: var(--font-size-xx-large);
+
+  /* Set the font weight to font-weight-bold */
+  font-weight: var(--font-weight-bold);
+
+  /* Use the section-title-margin to set the margin */
+  margin: var(--section-title-margin);
+
+  /* Use the section-title-color to set the text color */
+  color: var(--section-title-color);
 }
 
+/* Targeting the section-tagline class */
+.section-tagline {
+  /* Set the family of fonts to font-family-title */
+  font-family: var(--font-family-title);
 
+  /* By using the property section-tagline-transform, transform the text */
+  text-transform: var(--section-tagline-transform);
 
+  /* Set the weight of fonts to font-weight-bold */
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+/* Target the .container class and set the following */
+.container {
+  /* Set the width to 960px */
+  width: 960px;
+
+  /* Evenly distribute the margins on both the left and right side */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Revisit the section-tagline and card-category declarations and reset their color to color-primary */
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Create a new declaration targeting all 6 levels of section headings, positioned before the links declaration */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
+  /* Set its font-family to font-family-title */
+  font-family: var(--font-family-title);
+  /* Set the boldness of fonts in the headings to font-weight-bold */
+  font-weight: var(--font-weight-bold);
 }
 
+html {
+  scroll-behavior: smooth;
+  /* Set font-size for all fonts in the html element to 62.5% of their normal size */
+  font-size: 62.5%; /* This sets 1rem to be equal to 10px (62.5% of the default 16px) */
+}
+
+body {
+  /* Set the minimum height of line boxes in the body to line-height-base */
+  line-height: var(--line-height-base);
+  /* Revisit the body and anchor declarations and reset their color to text-color */
+  color: var(--text-color);
+  /* Set body's font-family to font-family-base */
+  font-family: var(--font-family-base);
+  /* Set font-size for any fonts in the body to font-size-medium */
+  font-size: var(--font-size-medium);
+  /* Set the boldness of fonts in the body to font-weight-regular */
+  font-weight: var(--font-weight-regular);
+}
+
+/* a {
+                          color: #161616;
+                        } */
+
+/* Target anchor elements that contain a hyperlink */
+a:link {
+  /* Style the anchor elements so the text isn't decorated with anything */
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Target the visited state for the link */
+a:visited {
+  /* Italicize the text (same as in the default state) */
+  font-style: italic;
+}
+
+/* Target the hover state for the link */
+a:hover {
+  /* Decorate the links with an underline when hovering */
+  text-decoration: underline;
+}
+
+/* Target the active state for the link */
+a:active {
+  /* Set the color of the background with the variable color-light-grey */
+  background-color: var(--color-light-grey);
+}
+
+/* Hide all elements with the class visually-hidden */
+.visually-hidden {
+  display: none;
+}
+
+/* Set foreground color of all elements with the class card-category to #D73953 */
+.card-category {
+  color: #d73953;
+}
+
+/* Set foreground color of all elements with the class section-tagline to #D73953 */
+.section-tagline {
+  color: #d73953;
+}
+
+/* Customizing the navbar */
+
+/* Targeting the navbar-menu class, let it float to the right */
 .navbar-menu {
-    float: right;
+  float: right;
 }
 
-.nav  {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style: none;
-    /* Alinear el texto al centro dentro de la clase nav */
-    
+/* For the nav class */
+.nav {
+  /* the margin on all sides should be set to 0 */
+  margin: 0;
+
+  /* the padding on all sides should be set to 0 */
+  padding: 0;
+
+  /* center align the text */
+  text-align: center;
+
+  /* the list will be displayed without any markers (bullets) or numbering */
+  list-style: none;
 }
-.nav .nav-item  {
-    display: var(--nav-item-display);
-    font-family: var(--nav-item-font-family);
-    font-weight: var(--nav-item-font-weight);
-    font-size: var(--nav-item-font-size);
-    letter-spacing: var(--nav-item-letter-spacing);
-    margin: var(--nav-item-margin);
+
+/* For the nav-item class in nav class */
+.nav .nav-item {
+  /* set the display to nav-item-display */
+  display: var(--nav-item-display);
+
+  /* set the family of fonts to nav-item-font-family */
+  font-family: var(--nav-item-font-family);
+
+  /* set the boldness of fonts to nav-item-font-weight */
+  font-weight: var(--nav-item-font-weight);
+
+  /* set the size of fonts to nav-item-font-size */
+  font-size: var(--nav-item-font-size);
+
+  /* set the spacing between text characters to nav-item-letter-spacing */
+  letter-spacing: var(--nav-item-letter-spacing);
+
+  /* set the margin on all sides to nav-item-margin */
+  margin: var(--nav-item-margin);
 }
+
+/* For the nav-link class in nav class */
 .nav .nav-link {
-   
-    padding: 0.5rem 1rem;
-    display: block;
-    
+  /* set the display to block */
+  display: block;
+
+  /* set the padding to half of the root element for top and bottom, and equal to the root element for left and right */
+  padding: 0.5rem 1rem;
 }
+
 /* While hovering over the nav-link class in nav class, set their foreground color value to nav-item-link-hover */
 .nav .nav-link:hover {
-    color: var(--nav-item-link-hover);  /*cuando paso el mause que cambie de color*/
+  color: var(--nav-item-link-hover);
 }
 
