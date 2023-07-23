@@ -370,10 +370,10 @@ h6 {
     letter-spacing: var(--nav-item-letter-spacing);
     margin: var(--nav-item-margin);
 }
-.nav.nav-link {
+.nav .nav-link {
    
-    display: block;
     padding: 0.5rem 1rem;
+    display: block;
     
 }
 /* While hovering over the nav-link class in nav class, set their foreground color value to nav-item-link-hover */
