@@ -469,26 +469,7 @@ a:active {
     margin: var(--nav-item-margin);
 }
 
-.nav-item-link:hover {
-    color: var(--color-white);
-  }
 
-  .nav .nav-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--color-white);
-    width: 0;
-    height: 2rem;
-  }
-
-  .nav .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary);
-    width: 100%;
-  }
-  
-  
   
 
 /* For the nav-link class in nav class */
@@ -500,10 +481,53 @@ a:active {
     padding: 0.5rem 1rem;
 }
 
-/* While hovering over the nav-link class in nav class, set their foreground color value to nav-item-link-hover */
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
-}
+  }
+  
+  /* Edit the nav-item-link-hover property by setting its value to the variable color-white */
+  /* .nav-item-link-hover {
+    color: var(--color-white);
+  } */
+  
+  /* Target the before pseudo elements of nav-link that is inside the nav */
+  .nav .nav-link::before {
+    /* Set the values of these elements to empty using content */
+    content: "";
+  
+    /* Absolutely position the targeted elements */
+    position: absolute;
+  
+    /* Set the vertical position to 0 */
+    top: 0;
+  
+    /* The horizontal position of the targeted elements should be 0 */
+    left: 0;
+  
+    /* Set the color of the background color of the targeted elements to the value color-white */
+    background-color: var(--color-white);
+  
+    /* The width of the targeted elements should be set to 0 */
+    width: 0;
+  
+    /* Set the height to 20% of the root element value */
+    height: 0.2rem; /* Assuming the root element's font size is defined in percentage units */
+  }
+  
+  /* Target the before pseudo elements of nav-link when nav-item is hover and is inside nav */
+  .nav .nav-item:hover .nav-link::before {
+    /* Set the background color of the elements to the variable color-primary */
+    background-color: var(--color-primary);
+  
+    /* Set the width of the elements to 100% */
+    width: 100%;
+  }
+  
+  /* For all ul with the class row */
+  ul.row {
+    /* 0 margins all around */
+    margin: 0;
+  }
 
 /* For all ul with the class row */
 ul.row {
