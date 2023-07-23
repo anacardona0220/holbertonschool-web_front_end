@@ -249,17 +249,16 @@ template {
 
 
     --section-tagline-margin: 0
-
-    /* Add custom properties to the root selector in the css file */
-  --button-display: inline-block;
-  --button-padding: 1.5rem 3rem;
-  --button-border: 0.2rem solid var(--color-primary);
-  --button-color: var(--color-black);
-  --button-text-decoration: none;
-  --button-font-size: var(--font-size-large);
-  --button-hover-color: var(--color-white);
-  --button-hover-text-decoration: none;
-  --button-hover-background: var(--color-primary);
+        /* Add custom properties to the root selector in the css file */
+        --button-display: inline-block;
+    --button-padding: 1.5rem 3rem;
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
 }
 
 /* Target the class section and set the padding on all 4 sides to section-padding */
@@ -524,9 +523,6 @@ ul.row {
     /* Establecer el fondo al valor de la variable color-black */
     background: var(--color-black);
 
-    --button-color: var(--color-white);
-
-    
 }
 
 .footer-address {
@@ -579,12 +575,15 @@ ul.row {
     font-size: var(--button-font-size);
     color: var(--button-color);
     text-decoration: var(--button-text-decoration);
-  }
+}
 
-  .button:hover {
+.button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background: var(--button-hover-background);
-  }
+}
 
-  
+[data-section-theme="dark"] {
+    /* Create a custom property button-color pointing to the variable color-white */
+    --button-color: var(--color-white);
+}
