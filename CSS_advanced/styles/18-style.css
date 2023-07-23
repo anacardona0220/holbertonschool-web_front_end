@@ -236,14 +236,14 @@ template {
     --footer-padding: 5rem 0 1rem;
 
     /* Cambia este valor según el color deseado */
-    --nav-item-link-hover: blue;
 
-    --nav-item-font-family: var(font-family-title);
-    --nav-item-font-weight: var(font-weight-bold);
-    --nav-item-font-size: var(tofont-size-medium);
+
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--tofont-size-medium);
     --nav-item-letter-spacing: 0.04rem;/*4%del root element*/
     --nav-item-display: inline-block;
-    --nav-item-link-hover: var(color-primary);
+    --nav-item-link-hover: var(--color-primary);
     --nav-item-margin: 0 0 3rem 0;/*3 times the root element on the bottom and 0*/
 }
 
