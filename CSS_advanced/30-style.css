@@ -181,8 +181,8 @@ template {
 
 /*# sourceMappingURL=normalize.min.css.map */
 /*
-                              ************************** start of my code **********************************************
-                              */
+                            ************************** start of my code **********************************************
+                            */
 /* Universal box sizing rule */
 *,
 *:before,
@@ -480,8 +480,8 @@ a:active {
 
 /* Edit the nav-item-link-hover property by setting its value to the variable color-white */
 /* .nav-item-link-hover {
-      color: var(--color-white);
-    } */
+    color: var(--color-white);
+  } */
 
 /* Target the before pseudo elements of nav-link that is inside the nav */
 .nav .nav-link::before {
@@ -766,11 +766,6 @@ ul.row {
     left: var(--header-logo-link-left);
 }
 
-/* .card-category{
-      color: var(--color-primary);
-    } */
-
-/* Target card-outer within the card-work */
 .card-work .card-outer {
     /* Relatively position the element */
     position: relative;
