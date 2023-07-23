@@ -480,7 +480,7 @@ ul.row {
 }
 
 .footer-copyright{
-  margin: none;
+  margin: 0;
   size: var(--font-size-small);
   color: var(--text-color);
 }
