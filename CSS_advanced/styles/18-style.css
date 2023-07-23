@@ -243,8 +243,8 @@ template {
     --nav-item-font-size: var(--tofont-size-medium);
     --nav-item-letter-spacing: 0.04rem;/*4%del root element*/
     --nav-item-display: inline-block;
-    --nav-item-link-hover: var(--color-primary);
     --nav-item-margin: 0 0 3rem 0;/*3 times the root element on the bottom and 0*/
+    --nav-item-link-hover: var(--color-primary);
 }
 
 
@@ -363,12 +363,12 @@ h6 {
     
 }
 .nav .nav-item  {
-    font-family: var(nav-item-font-family);
-    font-weight: var(nav-item-font-weight);
-    font-size: var(nav-item-font-size);
-    letter-spacing: var(nav-item-letter-spacing);
-    display: var(nav-item-display);
-    margin: var(nav-item-margin);
+    display: var(--nav-item-display);
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    margin: var(--nav-item-margin);
 }
 .nav.nav-link {
    
