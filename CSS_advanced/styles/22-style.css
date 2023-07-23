@@ -505,10 +505,10 @@ ul.row {
 
 [data-section-theme="dark"] {
     /* Redefinir la propiedad personalizada text-color */
-    --text-color: white;
+    --text-color: var(--color-white);
 
     /* Redefinir la propiedad personalizada section-title-color */
-    --section-title-color: white;
+    --section-title-color: var(--color-white);
 
     /* Establecer el fondo al valor de la variable color-black */
     background: var(--color-black);
