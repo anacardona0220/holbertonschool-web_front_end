@@ -15,6 +15,7 @@ Understanding the semantic value of the following tags:
 * Nnav
 * Section
 * Aside.
+  
 Using headings and understanding the importance of following the hierarchical order.
 Creating different types of lists in HTML.
 Understanding the differences between media types, such as SVG, GIF, PNG, and JPG.
