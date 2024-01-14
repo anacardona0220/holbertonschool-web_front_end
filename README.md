@@ -3,11 +3,11 @@
 ## Project Techium project
 Learning Objectives At the end of this project, you are expected to be able to explain the following concepts without the help of Google:
 
-## Guidelines for HTML coding.
-Creating the skeleton of an HTML5 page.
-Using semantic HTML tags to structure a web page.
-Choosing between div and span based on use cases.
-Understanding the semantic value of the following tags:
+1. Guidelines for HTML coding.
+2. Creating the skeleton of an HTML5 page.
+3. Using semantic HTML tags to structure a web page.
+4. Choosing between div and span based on use cases.
+5. Understanding the semantic value of the following tags:
 * Header
 * Main
 * Ffooter
@@ -16,14 +16,14 @@ Understanding the semantic value of the following tags:
 * Section
 * Aside.
   
-Using headings and understanding the importance of following the hierarchical order.
-Creating different types of lists in HTML.
-Understanding the differences between media types, such as SVG, GIF, PNG, and JPG.
-Structuring data using HTML tables.
-Integrating videos into a webpage.
-Integrating audio files into a webpage.
-Embedding external content into an HTML page.
-Correctly structuring an HTML page.
+6. Using headings and understanding the importance of following the hierarchical order.
+7. Creating different types of lists in HTML.
+8. Understanding the differences between media types, such as SVG, GIF, PNG, and JPG.
+9. Structuring data using HTML tables.
+10. Integrating videos into a webpage.
+11. Integrating audio files into a webpage.
+12. Embedding external content into an HTML page.
+13. Correctly structuring an HTML page.
 
 ## Requirements
 A README.md file at the root of the project folder is mandatory. Your code should be W3C compliant and validate with the W3C-Validator. The name "Techium" will be used as the company name across our webpages. Sitemap of the Project Please refer to the sitemap below to understand the structure of the project:
